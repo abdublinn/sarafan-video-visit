@@ -1,0 +1,8 @@
+.cache/
+site/
+__pycache__/
+*.pyc
+.venv/
+.obsidian/
+.DS_Store
+Thumbs.db

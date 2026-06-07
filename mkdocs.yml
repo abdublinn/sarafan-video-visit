@@ -1,0 +1,95 @@
+site_name: Видео визита к клиенту
+site_description: Операционный пайплайн подготовки видео-кейса для курса «Сарафанные продажи в мебели на заказ»
+site_author: Дублин А.Б.
+site_url: https://abdublinn.github.io/sarafan-video-visit/
+copyright: © Дублин Александр Борисович, 2025–2026 · Курс «Сарафанные продажи в мебели на заказ»
+
+repo_url: https://github.com/abdublinn/sarafan-video-visit
+repo_name: abdublinn/sarafan-video-visit
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ru
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+    - content.tooltips
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: ru
+  - callouts
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - tables
+  - def_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - toc:
+      permalink: true
+      permalink_title: Якорь на этот заголовок
+
+nav:
+  - Процесс (главная): index.md
+  - 01. Стартовая карточка: 01-startovaya-kartochka.md
+  - 02. Опросный лист менеджера: 02-oprosnyy-list.md
+  - 03. ТЗ — Битрикс + ИИ: 03-tz-bitrix.md
+  - 04. OSINT-чек-лист: 04-osint.md
+  - 05. Досье клиента: 05-dosye-klienta.md
+  - 06. ТЗ — сценарии ИИ: 06-tz-stsenariy.md
+  - 07. Шаблон сценария: 07-stsenariy.md
+  - 08. Памятка съёмки: 08-pamyatka.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/abdublinn
+  generator: false
