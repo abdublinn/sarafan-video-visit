@@ -6,3 +6,11 @@ __pycache__/
 .obsidian/
 .DS_Store
 Thumbs.db
+
+# Workflow file требует scope `workflow` у OAuth-токена gh CLI.
+# Чтобы включить автодеплой через GitHub Actions:
+#   1) gh auth refresh -s workflow
+#   2) удалить строку ниже
+#   3) git add .github/workflows/deploy.yml && git commit && git push
+# До этого момента — деплоим локально: python scripts/sync.py && mkdocs gh-deploy --force
+.github/workflows/deploy.yml
